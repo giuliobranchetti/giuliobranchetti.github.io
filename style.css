@@ -1,0 +1,65 @@
+*, *::before, *::after {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+}
+
+body {
+    background-color: #514cb18a;
+    overflow: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 45% auto;
+    gap: 10px;
+    height: 100vh;
+}
+
+model-viewer {
+    position: absolute;
+    left: 20%;
+    width: 200%;
+    height: 100%;
+    translate: -50%;
+}
+
+.right {
+    margin: 30px 20px;
+    margin-left: 0;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.title {
+    font-size: 30px;
+    color: #820082;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-y: auto;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 70% auto;
+    }
+
+    model-viewer {
+        position: relative;
+        left: 0;
+        width: 100%;
+        translate: 0;
+    }
+
+    .right {
+        margin: 20px;
+        margin-top: 0;
+    }
+}
