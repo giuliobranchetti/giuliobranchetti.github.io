@@ -10,7 +10,7 @@
 
 body {
     background-color: #514cb18a;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .container {
@@ -42,9 +42,9 @@ model-viewer {
 }
 
 @media only screen and (max-width: 768px) {
-    body {
+    /* body {
         overflow-y: auto;
-    }
+    } */
 
     .container {
         grid-template-columns: 1fr;
